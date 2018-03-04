@@ -11,6 +11,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # PowerLevel9k config
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir newline vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
