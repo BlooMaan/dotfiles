@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/bloomaan/.oh-my-zsh
+  export ZSH=/Users/ajordan/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -96,3 +96,28 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias dc="docker-compose"
+alias dcu="docker-compose up"
+alias dcs="docker-compose stop"
+alias dcr="docker-compose run"
+alias dcb="docker-compose build"
+
+alias glud="git pull upstream develop"
+
+alias k="kubectl"
+alias kg="kubectl get"
+alias kgn="kubectl get nodes"
+alias kgp="kubectl get po"
+alias kgd="kubectl get deploy"
+alias kd="kubectl describe"
+alias kdn="kubectl describe nodes"
+alias kdp="kubectl describe po"
+alias kdd="kubectl describe deploy"
+alias ks="kubectl scale"
+alias kl="kubectl logs"
+alias klf="kubectl logs -f"
+alias kaf="kubectl apply -f"
+
+source <(kubectl completion zsh)
+
+export PATH="/usr/local/opt/node@8/bin:$PATH"; if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
