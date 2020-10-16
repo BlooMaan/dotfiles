@@ -1,0 +1,51 @@
+{
+    "editor.renderWhitespace": "all",
+    "editor.wordWrapColumn": 120,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "window.title": "${activeEditorLong}${separator}${rootName}",
+    "[javascript]": {
+        "editor.tabSize": 2,
+    },
+    "[json]": {
+        "editor.formatOnPaste": true,
+    },
+    "files.trimTrailingWhitespace": true,
+    "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
+    "files.associations": {
+        "*.Jenkinsfile": "groovy",
+        "Jenkinsfile": "groovy"
+    },
+    "php-docblocker.author": {
+        "name": "Alex Jordan"
+    },
+    "php-docblocker.extra": [
+        "@author Alex Jordan"
+    ],
+    "php-docblocker.returnGap": true,
+    "php.suggest.basic": false,
+    "[php]": {
+        "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
+    },
+    "breadcrumbs.enabled": true,
+    "window.zoomLevel": -1,
+    "diffEditor.renderSideBySide": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[yaml]": {
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.tabSize": 2
+    },
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "colorize.include": [
+        "**.Xresources"
+    ],
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreview": false
+}

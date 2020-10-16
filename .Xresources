@@ -8,12 +8,35 @@
 
 ! Option decriptions: http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
 
-URxvt*font: xft:DejaVu\ Sans\ Mono\ for\ Powerline:pixelsize=14
+URxvt*termName: xterm-256color
+Xft.dpi: 96:unscaled
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintmedium
+
+! Fonts
+URxvt*font: xft:MesloLGS\ NF:pixelsize=14:antialias=true:autohint=true
+URxvt*allow_bold: true
+URxvt*boldFont: xft:MesloLGS\ NF:bold:pixelsize=14:antialias=true:autohint=true
+URxvt*letterSpace: -1
+URxvt*lineSpace: 0 // pixels, default = 1
+
+! Window
 URxvt*scrollBar: false
-URxvt*borderLess: true
+URxvt*borderLess: false
 URxvt*scrollstyle: plain
-URxvt*geometry: 180x50
-URxvt*perl-ext-common:  default,tabbed,selection-to-clipboard
+URxvt*geometry: 186x55
+
+URxvt*perl-ext-common:  default,tabbed,selection-to-clipboard,matcher
+
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.matcher.rend.0: Uline Bold fg4
+
+! Disable switching to iso mode (unicode input)
+URxvt.iso14755: false
+URxvt.iso14755_52: false
 
 URxvt*keysym.Shift-Control-V: eval:paste_clipboard
 URxvt*keysym.Shift-Control-C: eval:selection_to_clipboard
@@ -24,8 +47,8 @@ URxvt.tabbed.tab-fg:    2
 URxvt.tabbed.tab-bg:    0
 
 ! Set transparency
-URxvt*depth: 32
-#define background_opacity 80
+! URxvt*depth: 32
+! #define background_opacity 80
 
 ! ..######...#######..##........#######..##.....##.########......######...######..##.....##.########.##.....##.######## !
 ! .##....##.##.....##.##.......##.....##.##.....##.##.....##....##....##.##....##.##.....##.##.......###...###.##...... !
